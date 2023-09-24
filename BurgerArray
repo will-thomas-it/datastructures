@@ -1,0 +1,15 @@
+public class BurgerArray {
+    public static void main(String[] args) {
+        String[] burgerIngredients = {"Beef Patty", "Lettuce", "Tomato", "Cheese", "Brioche Bun"};
+        
+        // Accessing ingredients
+        System.out.println(burgerIngredients[2]); // Output: Tomato
+        
+        // Building a burger
+        System.out.print("Delicious Burger: ");
+        for (String ingredient : burgerIngredients) {
+            System.out.print(ingredient + " ");
+        }
+        // Output: Delicious Burger: Beef Patty Lettuce Tomato Cheese Brioche Bun
+    }
+}

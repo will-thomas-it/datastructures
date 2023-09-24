@@ -1,0 +1,17 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class BurgerQueue {
+    public static void main(String[] args) {
+        Queue<String> burgerQueue = new LinkedList<>();
+        
+        burgerQueue.offer("Beef Patty");
+        burgerQueue.offer("Lettuce");
+        burgerQueue.offer("Tomato");
+        
+        while (!burgerQueue.isEmpty()) {
+            System.out.print(burgerQueue.poll() + " ");
+        }
+        // Output: Beef Patty Lettuce Tomato
+    }
+}
